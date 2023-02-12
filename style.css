@@ -1,0 +1,51 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-item {
+  background-color: lightgray;
+  border: 1px solid black;
+  padding: 20px;
+  text-align: center;
+}
+
+header {
+  grid-column: 1 / 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightblue;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+header img {
+  width: 600px;
+  height: 500px;
+  margin-bottom: 10px;
+}
+
+#forklaring {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+
+#info {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  background-color: lightgreen;
+}
+
+#Ingredienser {
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
+  background-color: lightyellow;
+}
+
+#fremgangsmåde {
+  grid-row: 3 / 4;
+  grid-column: 1 / 4;
+  background-color: lightcoral;
+}
